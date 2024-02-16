@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadil | Portofolio</title>
+</head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="style-index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&family=Istok+Web&family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<body>
+    <!--Navigasi-->
+    <div class="navbar">
+        <nav>
+            <h2><span>F</span>ADIL.</h2>
+            <ul class="navbar-nav">
+                <a href="#HOME">HOME</a>
+                <a href="#ABOUT">ABOUT</a>
+                <a href="#SKILL">SKILL</a>
+                <a href="">CONTACT</a>
+            </ul>
+            <div class="navbar-burger">
+                <a id="humberger-menu"><i data-feather="menu"></i></a>
+            </div>
+            <script>
+                // Toggle class active 
+            const navbarNav = document.querySelector
+                    ('.navbar-nav')
+                       //Ketika humberger di click
+                    document.querySelector('#humberger-menu').
+                    onclick = () => {
+                        navbarNav.classList.toggle('active');
+                    };
+
+                    //Klik di luar side bar untuk menghilangkan nav nya 
+                const hamburger = document.querySelector
+                ('#humberger-menu')
+                document.addEventListener('click', function(e) {
+                    if(!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+                        navbarNav.classList.remove('active');
+                    }
+                });
+            </script>
+        </nav>
+    </div>
+
+    <!--Hero Section-->
+    <div class="container-hero" id="HOME">
+        <main class="Hero" id="HOME">
+            <section>
+                <h3>Hallo,</h3>
+                <h1>Muhamad Faidil Aziz</h1>
+                <h4>Front-end Developer</h4>
+            </section>
+            <p>Kadang kadang aku mikir, 
+            kadang kadang juga nggak</p>
+
+            <!--Tombol Media-->
+            <div class="icon-contact">
+                <a href=""><i data-feather="twitter"></i></a>
+                <a href=""><i data-feather="facebook"></i></a>
+                <a href="https://www.instagram.com/fa_di.ll?igsh=MWpsYzUweHljN2I2Ng=="><i data-feather="instagram"></i></a>
+                <a href="https://github.com/fadilaziz/fadilaziz275.github.io"><i data-feather="github"></i></a>
+            </div>
+        </main>
+        <figure class="img-hero">
+            <img src="img/foto-web3.jpg" alt="">
+        </figure>
+    </div>
+
+    <!--Halaman Tentang Saya-->
+    <main class="about-container" id="ABOUT">
+        <article class="article1">
+            <h3>About</h3>
+            <p>Hallo Saya Fadil, anda bisa melihat bio data <br>
+                saya yang ada di bawah</p>
+        </article>
+        <div class="card">
+            <figure>
+                <img src="img/foto-web3.jpg" alt="">
+            </figure>
+            <article>
+                <div class="about-me">
+                    <h1>Ingin Tahu Tentang Saya..?</h1>
+                    <hr>
+                    <p>Hallo Nama saya muhamad faidil aziz atau biasa di panggil fadil oleh 
+                    teman teman, saya adalah anak yang menyukai hal hal baru dalam hidup saya, 
+                    terutama di dunia teknologi saya sangan menyukai hal hal baru yang berbau teknologi</p>
+                </div>
+                    <button>Download CV</button>
+            </article>
+        </div>
+    </main>
+
+    <!--Halaman Skill-->
+    <main class="hero-skill" id="SKILL">
+        <article>
+            <h3>Skill and Tools</h3>
+            <p>Tools yang saya  <br>
+                gunakan untuk membuat website</p>
+        </article>
+        <div class="skill-card">
+            <div class="card-skill"><img src="img/pngegg.png" alt=""></div>
+            <div class="card-skill"><img src="img/pngegg (2).png" alt=""></div>
+            <div class="card-skill"><img src="img/pngegg (1).png" alt=""></div>
+            <div class="card-skill"><img src="img/images.png" alt=""></div>
+            <div class="card-skill"><img src="img/png-transparent-adobe-xd-user-interface-design-computer-icons-adobe-systems-adobe-purple-violet-text-thumbnail.png" alt=""></div>
+            <div class="card-skill"><img src="img/download (1).png" alt=""></div>
+        </div>
+    </main>
+
+    <!--footer-->
+    <main class="main-footer">
+        <section class="card-footer">
+            <h2><span>F</span>ADIL.</h2>
+            <div class="icon-media">
+                <a href=""><i data-feather="twitter"></i></a>
+                <a href=""><i data-feather="facebook"></i></a>
+                <a href="https://www.instagram.com/fa_di.ll?igsh=MWpsYzUweHljN2I2Ng=="><i data-feather="instagram"></i></a>
+                <a href="https://github.com/fadilaziz/fadilaziz275.github.io"><i data-feather="github"></i></a>
+            </div>
+        </section>
+        <div class="hakcipta"><span>©Website-By fadil</span></div>
+    </main>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
