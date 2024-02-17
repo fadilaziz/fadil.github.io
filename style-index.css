@@ -73,6 +73,7 @@ a:hover {
     width: 25rem;
     height: 25rem;
     margin-top: 50px;
+    border-radius: 50%;
 }
 
 section > h3 {
