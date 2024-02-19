@@ -359,9 +359,7 @@ article > button:hover {
 
     figure > img {
         width: 10rem;
-        height: 10rem;
-        border-radius: 20px;
-        border: white 3px solid;   
+        height: 10rem;   
     }
 
     .about-me {
