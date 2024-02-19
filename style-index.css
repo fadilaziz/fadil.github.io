@@ -140,8 +140,7 @@ section > h4 {
 
 figure > img {
     width: 21rem;
-    height: 21rem;
-    border-radius: 30px;   
+    height: 21rem; 
 }
 
 .about-me > p {
