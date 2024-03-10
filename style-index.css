@@ -557,6 +557,7 @@ article > button:hover {
 
     .about-me {
         margin-left: 0px;
+        text-align: center;
     }
 
     figure > img {
