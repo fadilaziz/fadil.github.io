@@ -250,6 +250,29 @@ article > button:hover {
     color: rgb(0, 110, 255);
 }
 
+/*form Contact*/
+.form-contact {
+    margin: 40px 0px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contact > h1 {
+    color: #006eff;
+}
+
+.tombol-contact {
+    margin-left: 70px;
+    background-color: #006eff;
+    padding: 3px 10px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+
+}
+
 /*Footer*/
 .main-footer {
     background-color: rgb(19, 19, 19);
