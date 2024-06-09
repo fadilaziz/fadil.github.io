@@ -1,23 +1,3 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $subject = htmlspecialchars($_POST['subject']);
-    $message = htmlspecialchars($_POST['message']);
-    
-    $to = "your-email@example.com"; // Ganti dengan email tujuan Anda
-    $headers = "From: " . $email . "\r\n";
-    
-    $fullMessage = "Nama: $name\nEmail: $email\nSubjek: $subject\n\nPesan:\n$message";
-    
-    if (mail($to, $subject, $fullMessage, $headers)) {
-        echo "Pesan berhasil dikirim.";
-    } else {
-        echo "Terjadi kesalahan saat mengirim pesan.";
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,21 +114,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </main>
     <!--Form Contact-->
     <main>
-        <form action="contact.php" method="post">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="subject">Subjek:</label>
-            <input type="text" id="subject" name="subject" required>
-            
-            <label for="message">Pesan:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Kirim</button>
-        </form>        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#contactForm').submit(function(event) {
+                    event.preventDefault(); // Mencegah pengiriman formulir secara default
+                    
+                    var formData = {
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        subject: $('#subject').val(),
+                        message: $('#message').val()
+                    };
+
+                    $.ajax({
+                        type: 'POST',
+                        url: 'contact.php',
+                        data: formData,
+                        dataType: 'json',
+                        encode: true,
+                        success: function(response) {
+                            if (response.success) {
+                                $('#result').html('<p>Pesan berhasil dikirim.</p>');
+                            } else {
+                                $('#result').html('<p>Terjadi kesalahan saat mengirim pesan.</p>');
+                            }
+                        },
+                        error: function() {
+                            $('#result').html('<p>Terjadi kesalahan saat mengirim pesan.</p>');
+                        }
+                    });
+                });
+            });
+        </script>
+</head>
+<body>
+    <form id="contactForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="subject">Subjek:</label>
+        <input type="text" id="subject" name="subject" required>
+        
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Kirim</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>      
     </main>
 
     <!--footer-->
