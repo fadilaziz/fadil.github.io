@@ -114,59 +114,51 @@
     </main>
     <!--Form Contact-->
     <main>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('#contactForm').submit(function(event) {
-                    event.preventDefault(); // Mencegah pengiriman formulir secara default
-                    
-                    var formData = {
-                        name: $('#name').val(),
-                        email: $('#email').val(),
-                        subject: $('#subject').val(),
-                        message: $('#message').val()
-                    };
-
-                    $.ajax({
-                        type: 'POST',
-                        url: 'contact.php',
-                        data: formData,
-                        dataType: 'json',
-                        encode: true,
-                        success: function(response) {
-                            if (response.success) {
-                                $('#result').html('<p>Pesan berhasil dikirim.</p>');
-                            } else {
-                                $('#result').html('<p>Terjadi kesalahan saat mengirim pesan.</p>');
-                            }
-                        },
-                        error: function() {
-                            $('#result').html('<p>Terjadi kesalahan saat mengirim pesan.</p>');
-                        }
-                    });
-                });
-            });
-        </script>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me Form</title>
 </head>
 <body>
-    <form id="contactForm">
-        <label for="name">Nama:</label>
-        <input type="text" id="name" name="name" required>
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+    <label for="name">Nama:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Pesan:</label><br>
+    <textarea id="message" name="message" required></textarea><br><br>
+
+    <button type="submit">Kirim</button>
+</form>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
         
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
         
-        <label for="subject">Subjek:</label>
-        <input type="text" id="subject" name="subject" required>
+        const subject = encodeURIComponent('Contact Me Form Submission');
+        const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\nPesan: ${message}`);
         
-        <label for="message">Pesan:</label>
-        <textarea id="message" name="message" required></textarea>
+        const mailtoLink = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
         
-        <button type="submit">Kirim</button>
-    </form>
-    <div id="result"></div>
+        window.location.href = mailtoLink;
+        
+        alert('Form telah dikirim! Aplikasi email Anda akan terbuka.');
+    });
+</script>
+
 </body>
-</html>      
+</html>
+
     </main>
 
     <!--footer-->
