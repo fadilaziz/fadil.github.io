@@ -1,3 +1,23 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
+    
+    $to = "your-email@example.com"; // Ganti dengan email tujuan Anda
+    $headers = "From: " . $email . "\r\n";
+    
+    $fullMessage = "Nama: $name\nEmail: $email\nSubjek: $subject\n\nPesan:\n$message";
+    
+    if (mail($to, $subject, $fullMessage, $headers)) {
+        echo "Pesan berhasil dikirim.";
+    } else {
+        echo "Terjadi kesalahan saat mengirim pesan.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,6 +131,24 @@
             <div class="card-skill"><img src="img/png-transparent-adobe-xd-user-interface-design-computer-icons-adobe-systems-adobe-purple-violet-text-thumbnail.png" alt=""></div>
             <div class="card-skill"><img src="img/download (1).png" alt=""></div>
         </div>
+    </main>
+    <!--Form Contact-->
+    <main>
+        <form action="contact.php" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subjek:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Kirim</button>
+        </form>        
     </main>
 
     <!--footer-->
