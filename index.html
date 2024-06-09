@@ -113,53 +113,42 @@
         </div>
     </main>
     <!--Form Contact-->
-    <main>
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact Me Form</title>
-</head>
-<body>
+    <main class="form-contact">
+        <h1>Contact Me</h1>
+        <p>Mari Berteman dengan saya</p>
 
-<h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
-<form id="contactForm">
-    <label for="name">Nama:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
 
-    <label for="message">Pesan:</label><br>
-    <textarea id="message" name="message" required></textarea><br><br>
+            <button type="submit" class="tombol-contact">Kirim</button>
+        </form>
 
-    <button type="submit">Kirim</button>
-</form>
-
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        const subject = encodeURIComponent('Contact Me Form Submission');
-        const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\nPesan: ${message}`);
-        
-        const mailtoLink = `mailto:fadilaziz275@gmail.com?subject=${subject}&body=${body}`;
-        
-        window.location.href = mailtoLink;
-        
-        alert('terimakasih sudah mengirim pesan');
-        alert('Form telah dikirim! Aplikasi email Anda akan terbuka.');
-    });
-</script>
-
-</body>
-</html>
-
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                const subject = encodeURIComponent('Contact Me Form Submission');
+                const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\nPesan: ${message}`);
+                
+                const mailtoLink = `mailto:fadilaziz275@gmail.com?subject=${subject}&body=${body}`;
+                
+                window.location.href = mailtoLink;
+                
+                alert('terimakasih sudah mengirim pesan');
+                alert('Form telah dikirim! Aplikasi email Anda akan terbuka.');
+            });
+        </script>
     </main>
 
     <!--footer-->
