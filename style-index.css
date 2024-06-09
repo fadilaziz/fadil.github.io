@@ -286,7 +286,7 @@ article > button:hover {
     padding: 30px;
     margin-bottom: 40px;
     /* From https://css.glass */
-    background: rgba(0, 110, 255, 0.50);
+    background: rgba(0, 110, 255, 0.40);
     backdrop-filter: blur(6.6px);
     -webkit-backdrop-filter: blur(6.6px);
     border: 2.5px solid rgb(0, 110, 255);
