@@ -314,7 +314,7 @@ article > button:hover {
 
 .tombol-contact {
     background-color: white;
-    padding: 6px 50px;
+    padding: 8px 100%;
     border-radius: 8px;
     color: rgb(0, 0, 0);
     border: none;
