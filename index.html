@@ -116,20 +116,19 @@
     <main class="form-contact" id="CONTACT">
         <h1>Contact Me</h1>
         <p>Kirim pesan untuk saya dan <br>Mari Berteman </p>
+            
+            <form id="contactForm" class="form-kolom">
+                <label for="name">Nama:</label><br>
+                <input type="text" id="name" name="name" placeholder="Nama Anda..." required><br><br>
 
-        <form id="contactForm" class="form-kolom">
-            <label for="name">Nama:</label><br>
-            <input type="text" id="name" name="name" placeholder="Nama Anda..." required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email Anda..." required><br><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Email Anda..." required><br><br>
+                <label for="message">Pesan:</label><br>
+                <textarea id="message" name="message" placeholder="Pesan..." required></textarea><br><br>
 
-            <label for="message">Pesan:</label><br>
-            <textarea id="message" name="message" placeholder="Pesan..." required></textarea><br><br>
-
-            <button type="submit" class="tombol-contact">Kirim</button>
-        </form>
-
+                <button type="submit" class="tombol-contact">Kirim</button>
+            </form>
         <script>
             document.getElementById('contactForm').addEventListener('submit', function(event) {
                 event.preventDefault();
