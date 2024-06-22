@@ -279,7 +279,7 @@ article > button:hover {
 }
 
 .form-kolom {
-    width: 40rem;
+    width: 20rem;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
