@@ -761,7 +761,7 @@ article > button:hover {
 }
 
 .text-footer > h1 span {
-    color : blue;
+    color : rgb(0, 110, 255);
 }
 
 
@@ -769,7 +769,7 @@ article > button:hover {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .card-footer {
@@ -788,11 +788,9 @@ article > button:hover {
 }
 
 .garis-footer {
-    width: 30rem;
+    width: 100%;
     margin-top: 25px;
-    display: block;
-    position: absolute;
-    left: 15%;
+    color: gray;
 }
 
 .medsos-footer {
@@ -801,7 +799,21 @@ article > button:hover {
 }
 
 .medsos-footer > a {
-    margin: 50px 10px 10px 10px ;
+    margin: 25px 10px 10px 10px ;
+}
+
+.developer-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.developer-footer > p {
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.developer-footer > p span {
+    font-weight: bold;
 }
 
 }
