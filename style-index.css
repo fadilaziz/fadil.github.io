@@ -61,7 +61,7 @@ a:hover {
 }
 
 .container-hero p {
-    color: white;
+    color:gray;
 }
 
 .Hero {
@@ -337,6 +337,10 @@ article > button:hover {
     justify-content: space-around;
 }
 
+.card-footer > p {
+    color: gray;
+}
+
 .card-footer {
     display: flex;
     flex-direction: column;
@@ -344,11 +348,11 @@ article > button:hover {
 
 .card-footer > h2 {
     margin-bottom: 10px;
-    color: #006eff;
 }
 
 .card-footer > a {
     margin-bottom: 5px;
+    color: gray;
 }
 
 .medsos-footer {
@@ -367,6 +371,7 @@ article > button:hover {
 
 .developer-footer > p {
     margin-bottom: 20px;
+    color: gray;
 
 }
 
@@ -573,7 +578,7 @@ article > button:hover {
     /*Navigasi*/
 
     nav > h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
     section > h3 {
         font-size: 16px;
@@ -603,6 +608,7 @@ article > button:hover {
         margin-left: 50px;
         margin-right: 50px;
         height: auto;
+        color: rgb(141, 141, 141);
     }
 
     .Hero {
@@ -800,11 +806,14 @@ article > button:hover {
 .card-footer > h2 {
     margin-bottom: 10px;
     margin-top: 25px;
-    color: #006eff;
+}
+
+.card-footer > p {
+    margin-top: 5px;
 }
 
 .card-footer > a {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: large;
 }
 
@@ -835,6 +844,7 @@ article > button:hover {
 
 .developer-footer > p span {
     font-weight: bold;
+    color: #006eff;
 }
 
 }
