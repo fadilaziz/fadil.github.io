@@ -124,7 +124,7 @@ section > h4 {
 }
 
 .article1 > h3 {
-    font-size: 27px;
+    font-size: 35px;
     margin-bottom: 15px;
     color: rgb(0, 110, 255);
 }
@@ -245,7 +245,7 @@ article > button:hover {
 }
 
 .hero-skill h3 {
-    font-size: 27px;
+    font-size: 35px;
     margin-bottom: 15px;
     color: rgb(0, 110, 255);
 }
@@ -262,7 +262,8 @@ article > button:hover {
 .form-contact > h1 {
     color: #006eff;
     margin-top: 20px;
-    font-size: 27px;
+    margin-bottom: 15px;
+    font-size: 35px;
 }
 
 .form-contact > p {
@@ -279,7 +280,7 @@ article > button:hover {
 }
 
 .form-kolom {
-    width: 20rem;
+    width: 50rem;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -318,6 +319,8 @@ article > button:hover {
     border-radius: 8px;
     color: rgb(0, 0, 0);
     border: none;
+    width: 40.5rem;
+    margin-bottom: 30px;
 
 }
 
@@ -769,6 +772,7 @@ article > button:hover {
     border-radius: 8px;
     color: rgb(0, 0, 0);
     border: none;
+    width: 10rem;
 
 }
 
