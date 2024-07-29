@@ -71,9 +71,8 @@ a:hover {
 }
 
 .img-hero img {
-    width: 23rem;
-    height: 23rem;
-    border-radius: 50%;
+    width: 26rem;
+    height: 26rem;
 }
 
 section > h3 {
@@ -635,8 +634,7 @@ article > button:hover {
 
     .img-hero > img {
         margin-top: 100px;
-        width: 25rem;
-        height: 25rem;
+        
     }
 
     /*Halaman tetang Saya*/
@@ -772,7 +770,7 @@ article > button:hover {
     border-radius: 8px;
     color: rgb(0, 0, 0);
     border: none;
-    width: 10rem;
+    width: 5px;
 
 }
 
