@@ -634,8 +634,9 @@ article > button:hover {
 
     .img-hero > img {
         margin-top: 100px;
-        width: 310px;
-        height: 310px;
+        margin-bottom: 20px;
+        width: 325px;
+        height: 325px;
         
     }
 
