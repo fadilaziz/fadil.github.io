@@ -3,8 +3,57 @@
     padding: 0px;
 }
 
-body {
+body.light-mode a, p, h1, h2, h3, h4  {
     font-family: PT Sans;
+}
+
+body.light-mode a, p  {
+    color: black;
+}
+
+body.light-mode nav {
+    background-color: white;
+    color: black;
+}
+
+body.light-mode > .container-hero   {
+    background-color: white;
+}
+
+body.light-mode .about-container {
+    background-color: white;
+}
+
+body.light-mode > h3 {
+    color: black;
+}
+
+body.dark-mode {
+    font-family: PT Sans;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    margin-right: 70px;
+}
+
+.toggle-button.light-mode {
+    background-color: #444;
+    color: white;
+}
+
+.toggle-button.dark-mode {
+    background-color: #fff;
+    color: black;
 }
 
 /*Navigasi*/
