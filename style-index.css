@@ -1,37 +1,83 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-body.light-mode a, p, h1, h2, h3, h4  {
     font-family: PT Sans;
 }
 
-body.light-mode a, p  {
-    color: black;
-}
+body.light-mode {
 
-body.light-mode nav {
-    background-color: white;
-    color: black;
-}
+    * {
+        font-family: PT Sans;
+    }
 
-body.light-mode > .container-hero   {
-    background-color: white;
-}
+    nav {
+        background-color: white;
+    }
 
-body.light-mode .about-container {
-    background-color: white;
-}
+    nav h2 {
+        color: black;
+    }
 
-body.light-mode > h3 {
-    color: black;
-}
+    a {
+        color: black ;
+    }
 
-body.dark-mode {
-    font-family: PT Sans;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    p {
+        color: black;
+    }
+
+    .container-hero {
+        background-color: white;
+    }
+
+    .container-hero  h3, h4 {
+        color: black;
+    }
+
+    .about-container {
+        background-color: white;
+    }
+
+    .card  h1 {
+        color: black;
+    }
+
+    .card button {
+        color: white;
+        background-color: black;
+    }
+
+    .hero-skill {
+        background-color: white;
+    }
+
+    .form-contact {
+        background-color: white;
+    }
+
+    .container-footer {
+        background-color: white;
+    }
+
+    .card-footer h2 {
+        color: black;
+    }
+
+    .text-footer h1 {
+        color: black;
+    }
+}
+    
+
+body.dark-mode  {
+
+    * {
+        font-family: PT Sans;
+    }
+
+    p {
+        color:white;
+    }
 }
 
 .toggle-button {
@@ -68,6 +114,11 @@ nav {
     right: 0;
     left: 0;
     z-index: 999;
+    box-shadow: -1px 5px 14px -1px rgba(0,0,0,0.18);
+-webkit-box-shadow: -1px 5px 14px -1px rgba(0,0,0,0.18);
+-moz-box-shadow: -1px 5px 14px -1px rgba(0,0,0,0.18);
+
+
 }
 
 nav > h2 {
@@ -267,6 +318,10 @@ article > button:hover {
     margin-top: 15px;
     margin-bottom: 15px;
     transition: 1.3s;
+    box-shadow: -1px 5px 14px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 5px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 14px -1px rgba(0,0,0,0.75);
+
 }
 
 .card-skill:hover {
@@ -336,9 +391,7 @@ article > button:hover {
     padding: 30px;
     margin-bottom: 40px;
     /* From https://css.glass */
-    background: rgba(0, 110, 255, 0.40);
-    backdrop-filter: blur(6.6px);
-    -webkit-backdrop-filter: blur(6.6px);
+    background: #006eff;
     border: 2.5px solid rgb(0, 110, 255);
 }
 
@@ -627,7 +680,6 @@ article > button:hover {
     }
 
     /*Navigasi*/
-
     nav > h2 {
         font-size: 22px;
     }
@@ -790,10 +842,8 @@ article > button:hover {
     align-items: center;
     padding: 30px;
     margin-bottom: 40px;
-    /* From https://css.glass */
-    background: rgba(0, 110, 255, 0.40);
-    backdrop-filter: blur(6.6px);
-    -webkit-backdrop-filter: blur(6.6px);
+     /* From https://css.glass */
+    background: #006eff;
     border: 2.5px solid rgb(0, 110, 255);
 }
 
