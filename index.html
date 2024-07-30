@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&family=Istok+Web&family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@300&family=Rubik&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<body>
+
+    
+<body class="light-mode">
     <!--Navigasi-->
     <div class="navbar">
         <nav>
@@ -23,7 +25,34 @@
                 <a href="#SKILL">SKILL</a>
                 <a href="#CONTACT">CONTACT</a>
             </ul>
+
             <div class="navbar-burger">
+                <!--Light and Dark Mode-->
+                <div class="light-mode">
+                    <button class="toggle-button light-mode" onclick="toggleMode()">Dark Mode</button>
+                
+                    <script>
+                        function toggleMode() {
+                            const body = document.body;
+                            const button = document.querySelector('.toggle-button');
+                            const currentMode = body.classList.contains('light-mode') ? 'light' : 'dark';
+                
+                            if (currentMode === 'light') {
+                                body.classList.remove('light-mode');
+                                body.classList.add('dark-mode');
+                                button.classList.remove('light-mode');
+                                button.classList.add('dark-mode');
+                                button.textContent = 'Light Mode';
+                            } else {
+                                body.classList.remove('dark-mode');
+                                body.classList.add('light-mode');
+                                button.classList.remove('dark-mode');
+                                button.classList.add('light-mode');
+                                button.textContent = 'Dark Mode';
+                            }
+                        }
+                    </script>
+                </div>
                 <a id="humberger-menu"><i data-feather="menu"></i></a>
             </div>
             <script>
