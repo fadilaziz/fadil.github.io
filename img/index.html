@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadil | Portofolio</title>
+</head>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&family=Istok+Web&family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<body class="">
+   <!--Navigasi-->
+<div class="navbar bg-gray-800 p-4 text-white">
+    <nav class="container mx-auto flex justify-between items-center">
+        <h2 class="text-2xl font-bold"><span class="text-blue-500">F</span>ADIL.</h2>
+        <ul id="navbar-nav" class="navbar-nav hidden lg:flex space-x-6">
+            <li><a href="#HOME" class="hover:text-blue-500">HOME</a></li>
+            <li><a href="#ABOUT" class="hover:text-blue-500">ABOUT</a></li>
+            <li><a href="#" class="hover:text-blue-500">MY PROJECT</a></li>
+            <li><a href="#SKILL" class="hover:text-blue-500">SKILL</a></li>
+            <li><a href="#CONTACT" class="hover:text-blue-500">CONTACT</a></li>
+        </ul>
+
+        <!-- Button for Burger menu -->
+        <div class="lg:hidden">
+            <button class="navbar-burger p-2 focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Light and Dark Mode Toggle -->
+        <div class="light-mode ml-6">
+            <button class="toggle-button p-2 bg-gray-700 text-white rounded-lg" onclick="toggleMode()">Dark Mode</button>
+        </div>
+    </nav>
+    
+    <!-- Dropdown Menu for Mobile -->
+    <div id="mobile-menu" class="hidden lg:hidden mt-2 space-y-2">
+        <a href="#HOME" class="block text-center text-white py-2 hover:bg-gray-700">HOME</a>
+        <a href="#ABOUT" class="block text-center text-white py-2 hover:bg-gray-700">ABOUT</a>
+        <a href="#" class="block text-center text-white py-2 hover:bg-gray-700">MY PROJECT</a>
+        <a href="#SKILL" class="block text-center text-white py-2 hover:bg-gray-700">SKILL</a>
+        <a href="#CONTACT" class="block text-center text-white py-2 hover:bg-gray-700">CONTACT</a>
+    </div>
+</div>
+
+<script>
+    // Function to toggle the menu visibility
+    function toggleMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    }
+
+    // Function to toggle between light and dark mode
+    function toggleMode() {
+        document.documentElement.classList.toggle('dark');
+    }
+</script>
+
+
+    <!--Hero Section-->
+    <div class="container-hero bg-gray-950 flex text-white flex-col-reverse  text-center " id="HOME">
+        <main class="Hero text-center mt-5" id="HOME">
+            <section>
+                <h3 class="font-semibold">Hallo👋🏻, Saya</h3>
+                <h1 class="text-4xl font-poppins font-bold text-sky-600">Muhamad Faidil Aziz</h1>
+                <h4 class="text-2xl font-semibold ">Front-end Developer</h4>
+            </section>
+            <p>Kadang kadang aku mikir,
+            kadang kadang juga nggak</p>
+
+            <!--Tombol Media-->
+            <div class="icon-contact flex text-center mt-4 mb-6 justify-center ali">
+                <a href="https://x.com/OrangAnak_oi?t=ucoOPe4IA_mrkhODa4YKUQ&s=09"><i data-feather="twitter"></i></a>
+                <a href=""><i data-feather="facebook"></i></a>
+                <a href="https://www.instagram.com/fa_di.ll?igsh=MWpsYzUweHljN2I2Ng=="><i data-feather="instagram"></i></a>
+                <a href="https://github.com/fadilaziz/fadil.github.io"><i data-feather="github"></i></a>
+            </div>
+        </main>
+        <figure class="img-hero flex justify-center mt-10">
+            <img class="max-w-xs h-w-xs "  src="img/pasphoto portofolio.png" alt="">
+        </figure>
+    </div>
+
+    <!--Halaman Tentang Saya-->
+    <main class="about-container text-white flex flex-col-reverse " id="ABOUT">
+        <article class="article1">
+            <h3>About</h3>
+            <p>Hallo Saya Fadil, saya adalah siswa SMK yang <br>
+                menyukai Teknologi Digital </p>
+        </article>
+        <div class="card">
+            <figure>
+                <img src="img/about.png" alt="">
+            </figure>
+            <article>
+                <div class="about-me">
+                    <h1>Ingin Tahu Tentang Saya..?</h1>
+                    <hr>
+                    <p>Hallo Nama saya muhamad faidil aziz atau biasa di panggil fadil oleh
+                    teman teman, saya adalah anak yang menyukai hal hal baru dalam hidup saya,
+                    terutama di dunia teknologi saya sangan menyukai hal hal baru yang berbau teknologi</p>
+                </div>
+                    <button>Download CV</button>
+            </article>
+        </div>
+    </main>
+
+    <!--Halaman Skill-->
+    <main class="hero-skill" id="SKILL">
+        <article>
+            <h3>Skill and Tools</h3>
+            <p>Tools yang saya  <br>
+                gunakan untuk membangun website</p>
+        </article>
+        <div class="skill-card">
+            <div class="card-skill"><img src="img/pngegg.png" alt="html"></div>
+            <div class="card-skill"><img src="img/pngegg (2).png" alt="css"></div>
+            <div class="card-skill"><img src="img/pngegg (1).png" alt="java script"></div>
+            <div class="card-skill"><img src="img/images.png" alt=""></div>
+            <div class="card-skill"><img src="img/png-transparent-adobe-xd-user-interface-design-computer-icons-adobe-systems-adobe-purple-violet-text-thumbnail.png" alt=""></div>
+            <div class="card-skill"><img src="img/download (1).png" alt="photo shop"></div>
+            <div class="card-skill"><img src="img/564095b05c52215257f267dec6c70ade.jpg" alt="git"></div>
+            <div class="card-skill"><img src="img/b37b05a713d8eebcbb475119e587859b.jpg" alt="github"></div>
+            <div class="card-skill"><img src="img/quality_restoration_20240618215533559.jpg" alt="github desktop"></div>
+        </div>
+    </main>
+
+    <!--My Project-->
+
+
+    <!--Form Contact-->
+    <main class="form-contact" id="CONTACT">
+        <h1>Contact Me</h1>
+        <p>Kirim pesan untuk saya dan <br>Mari Berteman </p>
+
+            <form id="contactForm" class="form-kolom">
+                <label for="name">Nama:</label><br>
+                <input type="text" id="name" name="name" placeholder="Nama Anda..." required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email Anda..." required><br><br>
+
+                <label for="message">Pesan:</label><br>
+                <textarea id="message" name="message" placeholder="Pesan..." required></textarea><br><br>
+
+                <button type="submit" class="tombol-contact">Kirim</button>
+            </form>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                const subject = encodeURIComponent('Contact Me Form Submission');
+                const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\nPesan: ${message}`);
+
+                const mailtoLink = `mailto:fadilaziz275@gmail.com?subject=${subject}&body=${body}`;
+
+                window.location.href = mailtoLink;
+
+                alert('terimakasih sudah mengirim pesan');
+                alert('Form telah dikirim! Aplikasi email Anda akan terbuka.');
+            });
+        </script>
+    </main>
+
+    <!--footer-->
+    <main class="container-footer">
+        <div class="text-footer">
+            <h1><span>F</span>ADIL</h1>
+        </div>
+        <div class="block-footer">
+            <div class="card-footer">
+                <h2>Hubungi Saya</h2>
+                <p>fadilaziz275@gmail.com</p>
+                <p>Jl.ninajadlu</p>
+                <p>Lampung</p>
+            </div>
+            <div class="card-footer">
+                <h2>Kategori Tulisan</h2>
+                <a href="">Teknologi</a>
+                <a href="">Programming</a>
+                <a href="">Gaya Hidup</a>
+
+            </div>
+            <div class="card-footer">
+                <h2>Tautan</h2>
+                <a href="#HOME">Home</a>
+                <a href="#ABOUT">About</a>
+                <a href="#SKILL">Skill</a>
+                <a href="#CONTACT">Contact</a>
+            </div>
+        </div>
+        <hr class="garis-footer">
+        <div class="medsos-footer">
+            <a href=""><i data-feather="twitter"></i></a>
+            <a href=""><i data-feather="facebook"></i></a>
+            <a href="https://www.instagram.com/fa_di.ll?igsh=MWpsYzUweHljN2I2Ng=="><i data-feather="instagram"></i></a>
+            <a href="https://github.com/fadilaziz/fadil.github.io"><i data-feather="github"></i></a>
+        </div>
+        <div class="developer-footer">
+            <p>©2024 Web-site By <span>Muhamad Faidil Aziz</span>✨</p>
+        </div>
+    </main>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
