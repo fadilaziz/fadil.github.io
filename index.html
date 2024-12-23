@@ -13,15 +13,16 @@
 <header class="items-center w-full h-9 shadow-md z-10">
     <nav> 
         <div class="flex justify-between w-full mt-3">
-            <h1 class="font-bold"><span class="text-sky-500 ml-6">My</span> Portofolio</h1>
+            <h1 class="font-semibold"><span class="text-sky-500 ml-6">My</span> Portofolio</h1>
             <!-- Tombol untuk menampilkan/menyembunyikan sidebar -->
             <button id="toggle-sidebar" class="bg-white px-2 rounded-md mr-6 text-gray-800 hover:bg-gray-300">☰</button>
         </div>
         <div>
             <ul id="sidebar" class="hidden z-1 absolute right-0 flex flex-col w-full h-auto shadow-xl bg-white py-5 px-5 gap-y-3">
-                <li><a class="mx-2 hover:text-sky-500 font-semibold" href="#">Beranda</a></li>
-                <li><a class="mx-2 hover:text-sky-500 font-semibold" href="#">Tentang</a></li>
-                <li><a class="mx-2 hover:text-sky-500 font-semibold" href="#">Project</a></li>
+                <li><a class="mx-2 hover:text-sky-500 font-semibold" href="#beranda">Beranda</a></li>
+                <li><a class="mx-2 hover:text-sky-500 font-semibold" href="#tentang">Tentang</a></li>
+                <li><a class="mx-2 hover:text-sky-500 font-semibold" href="#skill">Skill</a></li>
+                <li><a class="mx-2 hover:text-sky-500 font-semibold" href="#project">Project</a></li>
                 <li><a class="mx-2 hover:text-sky-500 font-semibold" href="#">Contact</a></li>
                 <div class="w-auto flex">
                     <a href="https://www.instagram.com/fa_di.ll?igsh=MWpsYzUweHljN2I2Ng=="><img class="h-9 w-9" src="img/instagram.png" alt=""></a>
@@ -46,7 +47,7 @@
     <!--Hero Section-->
     <div class="w-auto mt-9 ml-8 mr-8 ">
         <div class="flex items-center mb-2">
-            <div class="w-3 h-3 rounded-full mr-2 bg-sky-500"></div>
+            <div id="beranda" class="w-3 h-3 rounded-full mr-2 bg-sky-500"></div>
             <h1 class="font-semibold text-gray-500">Web Developer | Desain Grafis</h1>
         </div>
         <h1 class="text-3xl font-bold">Hallo, Saya <br> Muhamad Faidil Aziz</h1>
@@ -69,7 +70,7 @@
     <main class="bg-gray-100 py-8 ">
         <div class="mr-8 ml-8">
             <div class="flex items-center mb-2">
-                <div class="w-3 h-3 rounded-full mr-2 bg-sky-500"></div>
+                <div id="tentang" class="w-3 h-3 rounded-full mr-2 bg-sky-500"></div>
                 <h3 class="font-semibold text-gray-600">Tentang</h3>
             </div> 
             <h1 class="text-2xl font-extrabold mb-4">Apa Yang Anda Tau Tentang Saya...?</h1>
@@ -91,21 +92,21 @@
                 <img class="w-20 h-20 mr-6" src="img/logo1.png" alt="">
                 <div>
                     <h2 class="font-semibold text-black mt-3">FlowRoot</h2>
-                    <p class="w-auto text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsa.</p>
+                    <p class="w-auto text-sm text-gray-500">Logo ini melambangkan keseimbangan antara alam, kreativitas, dan modernitas melalui desain yang sederhana dan elegan.</p>
                 </div>
             </div>
             <div class="items-center bg-gray-100 rounded-md py-4 px-4 border-solid border-2 border-gray-300 justify-center flex  ">
                 <img class="w-20 h-20 mr-6" src="img/logo2.png" alt="">
                 <div>
                     <h2 class="font-semibold text-black mt-3">Potret Moment</h2>
-                    <p class="w-auto text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsa.</p>
+                    <p class="w-auto text-sm text-gray-500">Logo ini merepresentasikan keindahan minimalis, menyatukan kesederhanaan dan modernitas dengan elemen yang harmonis dan estetis.</p>
                 </div>
             </div>
             <div class="items-center bg-gray-100 rounded-md py-4 px-4 border-solid border-2 border-gray-300 justify-center flex   ">
                 <img class="w-20 h-20 mr-6" src="img/logo3.png" alt="">
                 <div>
                     <h2 class="font-semibold text-black mt-3">Singgah Ngopi</h2>
-                    <p class="w-auto text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsa.</p>
+                    <p class="w-auto text-sm text-gray-500">Logo ini melambangkan nuansa otentik dan alami, menghadirkan esensi kehangatan, kreativitas, dan kesederhanaan dalam desain yang modern.</p>
                 </div>
             </div>
         </div>
@@ -115,7 +116,7 @@
     <main>
         <div class="mr-8 ml-8">
             <div class="flex items-center mb-2 ">
-                <div class="w-3 h-3 rounded-full mr-2 bg-sky-500"></div>
+                <div id="skill" class="w-3 h-3 rounded-full mr-2 bg-sky-500"></div>
                 <h3 class="font-semibold text-gray-600">Skill</h3>
             </div> 
             <h1 class="font-extrabold text-2xl mb-4">Skill yang saya kuasai</h1>
@@ -135,22 +136,22 @@
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/html.png" alt="">
                 <h2 class="font-bold">HTML</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Struktur dasar untuk konten web</p>
             </div>
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/css.png" alt="">
                 <h2 class="font-bold">CSS</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Desain tampilan situs agar menarik.</p>
             </div>
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/javascript.png" alt="">
                 <h2 class="font-bold">Java Script</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Fungsionalitas interaktif pada halaman web.</p>
             </div>
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/tailwind.png" alt="">
                 <h2 class="font-bold">Tailwind</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Framework CSS untuk desain responsif cepat.</p>
             </div>
         </div>
     </main>
@@ -164,22 +165,22 @@
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/github.png" alt="">
                 <h2 class="font-bold">github</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Platform kolaborasi dan penyimpanan kode.</p>
             </div>
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/git push.png" alt="">
                 <h2 class="font-bold">Git Push</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Versi kontrol untuk mengelola perubahan kode.</p>
             </div>
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/git.png" alt="">
                 <h2 class="font-bold">Git</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Mengunggah kode lokal ke repositori online.</p>
             </div>
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/vscode.png" alt="">
                 <h2 class="font-bold">Visual Studio Code</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Editor kode ringan dengan banyak fitur.</p>
             </div>
         </div>
     </main>
@@ -193,12 +194,12 @@
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/images.png" alt="">
                 <h2 class="font-bold">Photo Shop</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Pengeditan gambar profesional dan manipulasi visual.</p>
             </div>
             <div class="w-44 h-auto bg-white rounded-md py-4 px-4 border-2 hover:bg-gray-200">
                 <img class="w-9 h-9 mb-3" src="img/figma.jpeg" alt="">
                 <h2 class="font-bold">Figma</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                <p class="text-sm">Alat desain UI/UX berbasis cloud.</p>
             </div>
         </div>
     </main>
@@ -207,7 +208,7 @@
     <main class="bg-gray-100 py-8">
         <div class="mr-8 ml-8">
             <div class="flex items-center mb-2 ">
-                <div class="w-3 h-3 rounded-full mr-2 bg-sky-500"></div>
+                <div id="project" class="w-3 h-3 rounded-full mr-2 bg-sky-500"></div>
                 <h3 class="font-semibold text-gray-600">Project</h3>
             </div> 
             <h1 class="text-2xl font-extrabold mb-4">Beberapa project yang pernah saya kerjakan</h1>
@@ -224,7 +225,7 @@
                         <p class="py-2 px-4 text-green-600 bg-green-200 rounded-full ml-3 text-sm ">PhotoGraphy</p>
                     </div>
                     <h2 class="font-semibold text-xl mt-4">Portofolio photography</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, impedit!</p>
+                    <p class="text-gray-500">Kumpulan karya photography saya dalam mengabadikan setiap moment yang berharga.</p>
                     <a href="index-2.html"><button class="bg-sky-500 text-white w-full mt-8 mb-5 py-2 px-6 rounded-full" href="index-2.html" target="blank">Lihat</button></a>
                 </div>
             </div>
@@ -239,8 +240,8 @@
                         <p class="py-2 px-4 text-green-600 bg-green-200 rounded-full ml-3 text-sm ">Programming</p>
                     </div>
                     <h2 class="font-semibold text-xl mt-4">Front-End Developer</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, impedit!</p>
-                    <button class="bg-sky-500 text-white w-full mt-8 mb-5 py-2 px-6 rounded-full">Lihat</button>
+                    <p class="text-gray-500">Portofolio atau kumpulan project programming yang pernah saya bangun.</p>
+                    <a href="index-3.html"><button class="bg-sky-500 text-white w-full mt-8 mb-5 py-2 px-6 rounded-full" href="index-2.html" target="blank">Lihat</button></a>
                 </div>
             </div>
             <!--Blog3-->
@@ -254,91 +255,54 @@
                         <p class="py-2 px-4 text-green-600 bg-green-200 rounded-full ml-3 text-sm ">Desain</p>
                     </div>
                     <h2 class="font-semibold text-xl mt-4">Desain Grafis</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, impedit!</p>
+                    <p class="text-gray-500">Project Desain Grafis seperti Vector, poster dan lain lain.</p>
                     <button class="bg-sky-500 text-white w-full mt-8 mb-5 py-2 px-6 rounded-full">Lihat</button>
                 </div>
             </div>
             
         </div>
     </main>
+
     <!--footer-->
-    <!--footer-->
-<footer>
-    <main class="container-footer mx-8 my-8">
-        <div class="text-footer">
-            <h1 class="font-bold"><span class="text-sky-500">My</span>Portofolio</h1>
-        </div>
-        <div class="block-footer grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="card-footer ml-2 text-gray-500">
-                <h2 class="font-semibold text-black">Hubungi Saya</h2>
-                <p>fadilaziz275@gmail.com</p>
-                <p>Jl.ninajadlu</p>
-                <p>Lampung</p>
+    <footer>
+        <main class="container-footer mx-3 my-4">
+            <div class="text-footer">
+                <h1 class="font-bold text-xl ml-3 mt-5"><span class="text-sky-500">My</span>Portofolio</h1>
             </div>
-            <div class="flex flex-col">
-                <h2 class="font-semibold text-black">Kategori Tulisan</h2>
-                <a href="" class="hover:text-sky-500 transition-all">Teknologi</a>
-                <a href="" class="hover:text-sky-500 transition-all">Programming</a>
-                <a href="" class="hover:text-sky-500 transition-all">Gaya Hidup</a>
+            <div class="ml-5">
+                <div class="card-footer ml-5 mt-3 text-gray-500 mb-2">
+                    <h2 class="font-semibold text-black">Hubungi Saya</h2>
+                    <p>fadilaziz275@gmail.com</p>
+                    <p>Jl.ninajadlu</p>
+                    <p>Lampung</p>
+                </div>
+                <div class="flex flex-col ml-5 mt-3 mb-2">
+                    <h2 class="font-semibold text-black">Kategori Tulisan</h2>
+                    <a href="" class="text-gray-500 hover:text-sky-500 transition-all">Teknologi</a>
+                    <a href="" class="text-gray-500 hover:text-sky-500 transition-all">Programming</a>
+                    <a href="" class="text-gray-500 hover:text-sky-500 transition-all">Gaya Hidup</a>
+                </div>
+                <div class="flex flex-col ml-5 mt-3 mb-2">
+                    <h2 class="font-semibold text-black">Tautan</h2>
+                    <a href="#beranda" class="text-gray-500 hover:text-sky-500 transition-all">Home</a>
+                    <a href="#tentang" class="text-gray-500 hover:text-sky-500 transition-all">About</a>
+                    <a href="#skill" class="text-gray-500 hover:text-sky-500 transition-all">Skill</a>
+                    <a href="#project" class="text-gray-500 hover:text-sky-500 transition-all">Project>
+                    <a href="#CONTACT" class="text-gray-500 hover:text-sky-500 transition-all">Contact</a>
+                </div>
             </div>
-            <div class="flex flex-col">
-                <h2 class="font-semibold text-black">Tautan</h2>
-                <a href="#HOME" class="hover:text-sky-500 transition-all">Home</a>
-                <a href="#ABOUT" class="hover:text-sky-500 transition-all">About</a>
-                <a href="#SKILL" class="hover:text-sky-500 transition-all">Skill</a>
-                <a href="#CONTACT" class="hover:text-sky-500 transition-all">Contact</a>
+            <hr class="garis-footer my-4">
+            <div class="medsos-footer flex justify-center space-x-4">
+                <a href="" class="hover:scale-110 transition-transform"><i data-feather="twitter"></i></a>
+                <a href="" class="hover:scale-110 transition-transform"><i data-feather="facebook"></i></a>
+                <a href="https://www.instagram.com/fa_di.ll?igsh=MWpsYzUweHljN2I2Ng==" class="hover:scale-110 transition-transform"><i data-feather="instagram"></i></a>
+                <a href="https://github.com/fadilaziz/fadil.github.io" class="hover:scale-110 transition-transform"><i data-feather="github"></i></a>
             </div>
-        </div>
-        <hr class="garis-footer my-4">
-        <div class="medsos-footer flex justify-center space-x-4">
-            <a href="" class="hover:scale-110 transition-transform"><i data-feather="twitter"></i></a>
-            <a href="" class="hover:scale-110 transition-transform"><i data-feather="facebook"></i></a>
-            <a href="https://www.instagram.com/fa_di.ll?igsh=MWpsYzUweHljN2I2Ng==" class="hover:scale-110 transition-transform"><i data-feather="instagram"></i></a>
-            <a href="https://github.com/fadilaziz/fadil.github.io" class="hover:scale-110 transition-transform"><i data-feather="github"></i></a>
-        </div>
-        <div class="developer-footer text-center mt-4">
-            <p>©2024 Web-site By <span class="font-bold">Muhamad Faidil Aziz</span>✨</p>
-        </div>
-    </main>
-</footer>
-
-<style>
-    footer {
-        background-color: #f9fafb;
-        padding: 20px 0;
-    }
-
-    .garis-footer {
-        border: 1px solid #e5e7eb;
-    }
-
-    .medsos-footer a {
-        color: #6b7280;
-    }
-
-    .medsos-footer a:hover {
-        color: #0ea5e9;
-    }
-
-    @media screen and (max-width: 768px) {
-        .container-footer {
-            padding: 16px;
-        }
-
-        .block-footer {
-            grid-template-columns: 1fr;
-            gap: 8px;
-        }
-
-        .text-footer h1 {
-            font-size: 1.5rem;
-        }
-
-        .developer-footer p {
-            font-size: 0.875rem;
-        }
-    }
-</style>
+            <div class="developer-footer text-center mt-2">
+                <p class="text-sm">©2024 Web-site By <span class="font-semibold">Muhamad Faidil Aziz</span>✨</p>
+            </div>
+        </main>
+    </footer>
 
 </body>
 </html>
